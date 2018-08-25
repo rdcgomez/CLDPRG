@@ -1,0 +1,50 @@
+		#crud {
+			border-radius: 5px;
+			background-color: #1F2837;
+			padding: 10px;
+			margin-top: 50px;
+			color: white;
+		}
+		table {
+            width: 100%;
+        }
+
+        th, td {
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            font-size: 150%;
+            color: white;
+
+        }
+		
+        th {
+            background-color: red;
+            color: white;
+            font-style: italic;
+	
+	
+        }
+		body {
+            background-image: url(images/destiny.jpg);
+            background-size:     cover;
+            background-repeat:   no-repeat;
+			border-style: solid;
+			border-top-width: none;
+			
+			border-left-width: 100px;
+			border-right-width: 100px;
+			border-top-color: white;
+			border-bottom-color: white;
+        }
+		a:link, a:visited {
+            background-color: red;
+            color: white;
+            padding: 12px 25px;
+            text-align: center;
+            
+            display: inline-block;
+        }
+        a:hover, a:active {
+            background-color: black;
+        }
