@@ -11,12 +11,14 @@
 
 <body>
   <div class="form">
-      <ul class="tab-group">
-        <li class="tab"><a href="#signup">Sign Up</a></li>
-        <li class="tab active"><a href="#login">Log In</a></li>
-      </ul>
-        <div class="tab-content">
-          <div id="login" >   
+        <div id="mtabs">
+          <ul class="tab-group">
+            <li><a href="#signup">Sign Up</a></li>
+            <li class="tab active"><a href="#login">Log In</a></li>
+          </ul>
+        </div>
+        <div id="tab-content">
+          <div id="login" class="mtab_content">   
             <h1>Sign in with your Basketball Manager Account</h1>
 
               <form action="######" method="post" autocomplete="off">
@@ -39,7 +41,7 @@
 
           </div>
 
-          <div id="signup" >   
+          <div id="signup" class="mtab_content">   
             <h1>Sign Up for Free</h1>
             
               <form action="######" method="post" autocomplete="off">
@@ -74,20 +76,15 @@
                             
                 <button type="submit" class="button button-block" name="register" />Register</button>        
               </form>
-
           </div>  <!-- sign up --> 
-
-          <script>
-            function openTab(evt, tabName) {
-                document.getElementsByClassName("tab-content").innerHTML ='#login';
-            }
-          </script>
-
+        
         </div> <!-- tab-content -->
-      </div> <!-- form -->
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-    <script src="js/index.js"></script>
-
+    </div> <!-- form -->
+    <script>
+       
+      </script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> 
+    <script src="functions.js"></script>
+    
 </body>
 </html>
