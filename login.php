@@ -21,6 +21,7 @@
         </div>
     <!-------------------------------------------------------------------------->   
         <div id="tab-content">
+          <!-------- LOGIN ---------> 
           <div id="login" class="mtab_content">   
             <h1>Sign in with your Basketball Manager Account</h1>
 
@@ -43,7 +44,7 @@
               </form>
 
           </div>
-
+          <!-------- SIGN UP ---------> 
           <div id="signup" class="mtab_content">   
             <h1>Sign Up for Free</h1>
             
@@ -79,14 +80,13 @@
                             
                 <button type="submit" class="button button-block" name="register" />Register</button>        
               </form>
-          </div>  <!-- sign up --> 
-        
-        </div> <!-- tab-content -->
+          </div>
+        </div> <!-- TAB-CONTENT -->
       <!-------------------------------------------------------------------------->
       
-  </div> <!-- form -->
+  </div> <!-- FORM -->
 <!------------------------------------------------------------------------------------------------------------------------------------------->  
-<!----REGISTER---->
+<!----SIGN UP---->
   <?php
       include_once 'db_config.php';
       
@@ -125,7 +125,7 @@
 <!----LOGIN---->
   <?php
       include_once 'db_config.php';
-      
+
       if(isset($_POST['login'])) {
         // variables for login data
         $email = $_POST['lemail'];
@@ -141,9 +141,11 @@
           echo " 
             <script>
             alert('You are now logged in!');
-            window.location.href='index.php';
+            window.location.href='indexlogout.php';
             </script>
           ";
+          
+
         } else {
             echo"
             <script>
